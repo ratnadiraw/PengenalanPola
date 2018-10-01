@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera"
+                android:minWidth="60dp"
+                android:minHeight="55dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/camera"/>
+            <LinearLayout
+                android:paddingLeft="4.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="1.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digit"
+                    android:layout_weight="1.0"
+                    />
+
+                <Button
+                    android:id="@+id/buttonSkeleton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skeleton"
+                    android:layout_weight="1.0"
+                    />
+
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seekThresholdSkel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progress="80" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imageView"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageView4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/imageView2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageView3" />
+            </RelativeLayout>
+            <SeekBar
+                android:id="@+id/seek1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="200"
+                android:progress="100" />
+            <SeekBar
+                android:id="@+id/seek2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="1000"
+                android:progress="1000" />
+            <SeekBar
+                android:id="@+id/seek3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progress="0" />
+            <SeekBar
+                android:id="@+id/seek4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="1000"
+                android:progress="1000" />
+            <SeekBar
+                android:id="@+id/seek5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="3"
+                android:progress="0" />
+            <TextView
+                android:id="@+id/textRGB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:paddingLeft="4.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="1.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color"
+                    android:layout_weight="1.0"
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grayscale"
+                    android:layout_weight="1.0"
+                    />
+
+            </LinearLayout>
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/graph" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/col1" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/col2" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/graph2" />
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/graph3" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gray1" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gray2" />
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginTop="5dp"
+                android:id="@+id/graph4" />
+            <TextView
+                android:id="@+id/textFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Click here to open save file!">
+            </TextView>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
